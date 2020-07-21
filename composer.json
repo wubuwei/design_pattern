@@ -1,0 +1,19 @@
+
+{
+  "name": "wubuwei/design_pattern",
+  "description": "design pattern",
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "wubuwei",
+      "email": "wubuwei.dev@gmail.com"
+    }
+  ],
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "DesignPattern\\": ""
+    }
+  }
+}

@@ -1,5 +1,7 @@
 <?php
 
+namespace DesignPattern\Singleton;
+
 /**
  * 单例模式实现
  *
@@ -10,7 +12,7 @@
 私有化重建方法： 防止反序列化
 私有化静态属性： 防止直接访问存储实例的属性
  */
-class DB
+class Singleton
 {
     private static $instance = null;
 
@@ -48,8 +50,8 @@ class DB
     }
 }
 
-$db1 = DB::getInstance();
-$db2 = DB::getInstance();
+$db1 = Singleton::getInstance();
+$db2 = Singleton::getInstance();
 
 var_dump($db1);
 var_dump($db2);
